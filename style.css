@@ -1,0 +1,111 @@
+/* GLOBAL BODY STYLE DENGAN GRADIENT + ANIMASI */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #333;
+  animation: gradientShift 10s ease infinite alternate;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* HEADER / JUDUL UTAMA */
+h1 {
+  text-align: center;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* FIELDSET */
+fieldset {
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 18px;
+  width: 90%;
+  max-width: 950px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+fieldset:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* LEGEND */
+legend {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0 15px;
+  color: #6c5ce7;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* AUDIO PLAYER */
+audio {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* IFRAME YOUTUBE */
+iframe {
+  width: 100%;
+  max-width: 420px;
+  height: 240px;
+  margin: 15px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+iframe:hover {
+  transform: scale(1.03);
+}
+
+/* VIDEO & IMAGE CONTAINER */
+.video-container,
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* GAMBAR */
+img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+}
